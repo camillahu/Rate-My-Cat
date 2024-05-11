@@ -1,0 +1,244 @@
+.CPContainer {
+  display: flex;
+  justify-content: center;
+  background-image: url('/img/background1.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+.CPLoreContainer,
+.CPCommentsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 10px;
+  height: 629px;
+  border-bottom: 12px solid black;
+  border-right: 10px solid black;
+  justify-content: space-between;
+  width: 400px;
+  background-color: #fff46f;
+}
+
+.CPCommentsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.CPLoreHeader {
+  font-size: 150%;
+  font-family: 'Black Han Sans', sans-serif;
+  user-select: none;
+}
+
+.CPLoreText {
+  font-size: 120%;
+  user-select: none;
+}
+
+.CPLoreButton {
+  border: 3px solid black;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+  background-color: #f8c5d5;
+  font-family: 'Black Han Sans', sans-serif;
+  border-bottom: 7px solid black;
+  border-right: 5px solid black;
+  transition: all 0.1s ease 0s;
+}
+
+.CPLoreButton:hover {
+  border-left: 6px solid black;
+  border-top: 5px solid black;
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
+  background-color: #fdb3cb;
+}
+
+.CPImgContainer {
+  display: flex;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 4px black;
+  border-radius: 3px;
+}
+
+.CPImgContainer > img {
+  width: 450px;
+  height: 450px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.CPPolaroidFirstText {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  user-select: none;
+}
+
+.CPRatedTimes {
+  font-size: 70%;
+  align-self: end;
+  margin-right: 20px;
+  margin-top: -5px;
+  margin-bottom: 2px;
+  user-select: none;
+}
+
+.CPName {
+  /* margin-right: 140px; */
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.CPRatingStar {
+  /* margin-left: 140px; */
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.CPAgeRace {
+  color: rgb(54, 54, 54);
+  font-size: 90%;
+  user-select: none;
+}
+
+.CPCommentsHeader {
+  font-size: 150%;
+  font-family: 'Black Han Sans', sans-serif;
+  user-select: none;
+}
+
+.CPCommenter {
+  font-size: 110%;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -20px;
+  user-select: none;
+}
+
+.CPComment {
+  font-style: italic;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.CPdelete {
+  margin-top: -35px;
+  margin-bottom: 5px;
+  margin-left: 450px;
+  border: 3px solid black;
+  height: 40px;
+  width: 40px;
+  background-color: #f8c5d5;
+  font-family: 'Black Han Sans', sans-serif;
+  border-bottom: 5px solid black;
+  border-right: 4px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.1s ease 0s;
+}
+
+.CPdelete:hover {
+  border-top: 4px solid black;
+  border-left: 5px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: #fdb3cb;
+}
+.CPArrowBtnLeft,
+.CPArrowBtnRight {
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  user-select: none;
+  margin: 10px;
+}
+
+.CPArrowBtnLeft {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.CPArrowBtnRight {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.CPcommentButton {
+  border: 3px solid black;
+  background-color: #f8c5d5;
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: bold;
+  border-bottom: 5px solid black;
+  border-right: 4px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.CPcommentButton:hover {
+  background-color: #fdb3cb;
+}
+.CPcommentField {
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+}
+.CPCommentsLoop {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.CPCommentsLoop:only-child {
+  overflow-y: hidden;
+}
+.CPCommentsLoop::-webkit-scrollbar {
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.CPCommentsLoop::-webkit-scrollbar-thumb {
+  background-color: #f8c5d5;
+  border-radius: 5px;
+}
+.CPCommentsLoop::-webkit-scrollbar-thumb:hover {
+  background-color: #fca5c1;
+  border-radius: 5px;
+}
+.CPCommentsLoop::-webkit-resizer {
+  display: none;
+}
+
+.CPCommenter > button {
+  border: 3px solid black;
+  height: 25px;
+  width: 25px;
+  background-color: #f8c5d5;
+  font-family: 'Black Han Sans', sans-serif;
+  border-bottom: 5px solid black;
+  border-right: 4px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.CPCommenter > button:hover {
+  border-top: 4px solid black;
+  border-left: 5px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: #fdb3cb;
+}
